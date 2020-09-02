@@ -11,16 +11,12 @@ pipeline {
                 sh 'ls'
             }
         }
-        stage('run tests') {
+        stage('run tests and publish test results') {
             steps {
                 sh 'ls'
             }
        }
-        stage('publish test results') {
-            steps {
-                sh 'ls'
-            }
-        }
+     
         stage('deploy war files') {
             steps {
                 sh 'ls'
